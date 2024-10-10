@@ -41,7 +41,7 @@ class Main extends ExpressConfig {
         this.app.use(cors({
             origin: [
                 'http://localhost:3000/api',
-                'https://loan-client-9hd6.vercel.app/api',
+                'https://loan-client-9hd6-kn6vrscu1-jidsus-projects.vercel.app/api',
                 // 'http://192.168.1.4:3000/api',
             ],
         }));
