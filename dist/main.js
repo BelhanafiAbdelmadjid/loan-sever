@@ -10,6 +10,7 @@
  ******************************************************************************/
 import express from 'express';
 import 'dotenv/config';
+console.log('MAIN Environment Variables:', process.env);
 import { PrivateRoutes, PublicRoutes, Routes } from './routes/index.js';
 import morgan from 'morgan';
 import { ErrorMiddleware } from './core/middlewares/error/error.middleware.js'; // import statusMonitor from 'express-status-monitor';
@@ -40,8 +41,8 @@ class Main extends ExpressConfig {
         this.app.use(cors({
             origin: [
                 'http://localhost:3000/api',
-                'https://loan-client.vercel.app/api',
-                'http://192.168.1.4:3000/api',
+                'https://loan-client-9hd6.vercel.app/api',
+                // 'http://192.168.1.4:3000/api',
             ],
         }));
         // this.app.use(express_status_monitor());

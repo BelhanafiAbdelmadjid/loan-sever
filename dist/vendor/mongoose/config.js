@@ -17,6 +17,7 @@ export class MongooseConfig {
     }
     async connectToDatabase() {
         const dbUri = process.env.DATABASEURL;
+        console.log("DATA BASE PRINT ",process.env.DATABASEURL,dbUri)
         const options = {
             dbName: process.env.DATABASENAME,
         };
